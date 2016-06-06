@@ -12,7 +12,7 @@
 #include "imx6ul.dtsi"
 
 / {
-	model = "Texecom:: VICTOR-A5150-02-01A HUB Board";
+	model = "Texecom: VICTOR-A5150-02-01A HUB Board";
 	compatible = "fsl,imx6ul-14x14-evk", "fsl,imx6ul";
 
 	chosen {
@@ -168,6 +168,7 @@
 	};
 };
 
+/* Under fec1, phy-handle employs to denote the phy device on the MDIO bus */
 &fec1 {
 	pinctrl-names = "default";
 	pinctrl-0 = <&pinctrl_enet1>;
